@@ -1,0 +1,28 @@
+---
+apache::package_version: latest
+
+#users::sysadmins:
+#  - craig
+#  - bob
+#  - susan
+
+users::sysadmins:
+  craig:
+    uid: 5000
+    home: /home/craig
+  bob:
+    uid: 5001
+    home: /home/bob
+
+linux::classes:
+  - apache
+  - mysql
+  - php
+
+## modules/linux/manifests/init.pp....
+
+#hiera_include('linux::classes')
+
+#include apache
+#include mysql
+#include php

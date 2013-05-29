@@ -1,0 +1,11 @@
+---
+apache::package_version: 2.2.4
+#users::sysadmins:
+#  - lucy
+#  - mark
+#
+
+users::sysadmins:
+  lucy:
+    uid: 6001
+    home: /foo
