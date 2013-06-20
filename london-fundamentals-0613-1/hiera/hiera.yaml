@@ -1,0 +1,17 @@
+---
+:backends:
+  - yaml
+  - gpg
+
+
+:yaml:
+  :datadir: /tmp/code/hieradata
+
+:hierarchy:
+  - hosts/%{fqdn}
+  - env/%{environment}
+  - common
+
+# /tmp/code/hieradata/hosts/craig.puppetlabs.vm.yaml
+# /tmp/code/hieradata/env/development.yaml
+# /tmp/code/hieradata/common.yaml
