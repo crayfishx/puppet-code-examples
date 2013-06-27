@@ -1,0 +1,18 @@
+---
+
+:backends:
+  - yaml
+
+:yaml:
+  :datadir: /tmp/code/hiera/data
+
+:hierarchy:
+  - host/%{fqdn}
+  - env/%{environment}
+  - common
+
+# fqdn=craig.puppetlabs.vm environment=dev
+#
+# /tmp/code/hiera/data/host/craig.puppetlabs.vm.yaml
+# /tmp/code/hiera/data/env/dev.yaml
+# /tmp/code/hiera/data/common.yaml
